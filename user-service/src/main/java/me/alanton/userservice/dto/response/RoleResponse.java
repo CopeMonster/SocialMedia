@@ -1,4 +1,6 @@
 package me.alanton.userservice.dto.response;
 
-public class RoleResponse {
+public record RoleResponse(
+        String name
+) {
 }

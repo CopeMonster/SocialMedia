@@ -1,4 +1,13 @@
 package me.alanton.userservice.dto.request;
 
-public class UserRequest {
+import java.util.Set;
+
+public record UserRequest(
+        String username,
+        String firstname,
+        String lastname,
+        String email,
+        String password,
+        Set<RoleRequest> roles
+) {
 }
