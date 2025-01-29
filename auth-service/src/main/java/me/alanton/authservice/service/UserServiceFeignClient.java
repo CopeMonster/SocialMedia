@@ -14,7 +14,7 @@ public interface UserServiceFeignClient {
     @GetMapping("/api/v1/users/{id}")
     ResponseEntity<UserResponse> getUserById(@PathVariable UUID id);
 
-    @GetMapping("/api/v1/users/{username}")
+    @GetMapping("/api/v1/users/username/{username}")
     ResponseEntity<UserResponse> getUserByUsername(@PathVariable String username);
 
     @GetMapping("/api/v1/users")

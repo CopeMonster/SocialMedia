@@ -1,6 +1,7 @@
 package me.alanton.userservice.service.impl;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import me.alanton.userservice.dto.request.UserRequest;
 import me.alanton.userservice.dto.response.UserResponse;
 import me.alanton.userservice.entity.Role;
@@ -19,6 +20,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 import java.util.UUID;
 
+@Slf4j
 @RequiredArgsConstructor
 @Service
 public class UserServiceImpl implements UserService {

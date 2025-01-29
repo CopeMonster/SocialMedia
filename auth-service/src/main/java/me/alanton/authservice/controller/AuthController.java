@@ -1,6 +1,7 @@
 package me.alanton.authservice.controller;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import me.alanton.authservice.dto.request.SignInRequest;
 import me.alanton.authservice.dto.request.SignUpRequest;
 import me.alanton.authservice.dto.response.SignInResponse;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Slf4j
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/auth")
